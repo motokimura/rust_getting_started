@@ -55,6 +55,13 @@ fn main() {
     let (x, y, z) = (1, 2, 3);
     println!("{}, {}, {}", x, y, z);
 
+    // タプルのインデックス
+    let tuple = (1, 2, 3);
+    let x = tuple.0;
+    let y = tuple.1;
+    let z = tuple.2;
+    println!("tuple = ({}, {}, {})", x, y, z);
+
     // 関数
     let fx: fn(i32) -> i32 = foo;
     println!("{}", fx(100));
